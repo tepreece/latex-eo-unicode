@@ -1,0 +1,16 @@
+Unicode input for Esperanto characters in LaTeX
+
+by Thomas Preece <thomas@tpreece.net>
+Licence: public domain / CC0
+
+This sty file lets you use Esperanto characters (ĈĜĤĴŜŬĉĝĥĵŝû) in LaTeX the *correct* way - by entering the relevant unicode characters into your source file. This package detects the unicode characters and replaces them with LaTeX composite characters in your document, whilst preseving them in unicode for output formats that require it (eg, PDF bookmarks). It also has the added benefit of not requiring you to learn yet another way of typing the characters...
+
+Sample code:
+
+\documentclass[a4paper,12pt]{article}
+\usepackage{eo-unicode}
+\begin{document}
+eĥoŝanĝo ĉiuĵaŭde
+\end{document}
+
+Currently this just implements the special characters; the existing 'Babel' module provides translated strings, however I could add them to this as well if there is demand.
